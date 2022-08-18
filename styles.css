@@ -54,9 +54,9 @@ audio {
 }
 
 .grid {
-  width: 1150px;
-  height: 1150px;
-  min-width: 1150px;
+  width: 975px;
+  height: 975px;
+  min-width: 975px;
 
   display: flex;
   flex-wrap: wrap;

@@ -29,15 +29,15 @@ body {
 }
 
 .title h1 {
-  font-size: 45px;
-  line-height: 45px;
+  font-size: 80px;
+  line-height: 80px;
   color: rgb(207, 30, 66);
   margin: 0;
   padding: 0;
 }
 
 .title p {
-  font-size: 14px;
+  font-size: 32px;
   margin: 0;
   padding: 0;
 }
@@ -54,8 +54,8 @@ audio {
 }
 
 .grid {
-  width: 1120px;
-  height: 1120px;
+  width: 1150px;
+  height: 1150px;
   min-width: 1120px;
 
   display: flex;

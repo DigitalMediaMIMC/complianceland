@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const width = 8
   const squares = []
   const timer //game timer
-  let timeLeft = 60 // game timer for 1 minute
+  let timeLeft = 10 // game timer for 1/6 minute
   let audio = document.getElementById('my-audio')
   let audioIcon = document.getElementById('audio-icon')
   let score = 0
@@ -18,10 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
     'url(assets/images/blue-candy.png)'
   ]
 
-  const iconsName = {
-    on: 'fas fa-volume-mute',
-    off: 'fas fa-volume-up',
-  }
 
   //Background-music
   document.getElementById('toggle-audio').onclick = function() {

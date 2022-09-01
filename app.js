@@ -18,25 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
     'url(assets/images/blue-candy.png)'
   ]
 
-  const iconsName = {
-    on: 'fas fa-volume-mute',
-    off: 'fas fa-volume-up',
-  }
-
-  //Background-music
-  document.getElementById('toggle-audio').onclick = function() {
-    console.log('togle-icon')
-    if (audio.paused) {
-      audio.play()
-      audioIcon.className= iconsName.on
-
-    } else {
-      audioIcon.className= iconsName.off
-      audio.pause()
-    }
-    
-  }
-
   //Start
   document.getElementById('start-button').onclick = function() {
     console.log('start')

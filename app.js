@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const scoreDisplay = document.getElementById('score')
-  const timeDisplay = document.getElementById('time')
+  const timeDisplay = document.getElementById('timer')
   const grid = document.querySelector('.grid')
   const width = 8
   const squares = []

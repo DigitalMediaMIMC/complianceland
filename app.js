@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const grid = document.querySelector('.grid')
   const width = 8
   const squares = []
+  const timer //game timer
+  let timeLeft = 60 // game timer for 1 minute
   let audio = document.getElementById('my-audio')
   let audioIcon = document.getElementById('audio-icon')
   let score = 0
@@ -33,6 +35,20 @@ document.addEventListener('DOMContentLoaded', () => {
       audio.pause()
     }
     
+    //Stop Timer
+  function stopTimer() {
+    clearInterval(timer);
+  }
+  
+  //Tick Timer
+  function updateTimer() {
+    timeLeft = timeLeft - 1;
+    if (timeLeft >= 0)
+      $('#time').html(timeLeft);
+    else {
+      stopTimer();
+    }
+    
   }
 
   //Start
@@ -41,6 +57,9 @@ document.addEventListener('DOMContentLoaded', () => {
     this.style.display = 'none'
     audio.play()
     audioIcon.className = iconsName.on
+
+    timer = setInterval(updateTimer, 1000); //start timer on click
+    updateTimer(); //reflects 1 second elapsing
 
     window.setInterval(function() {
       checkRowForFour()

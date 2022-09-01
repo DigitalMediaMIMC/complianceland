@@ -1,11 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   const scoreDisplay = document.getElementById('score')
-  const timeDisplay = document.getElementById('timer')
   const grid = document.querySelector('.grid')
   const width = 8
   const squares = []
-  
-  let timeLeft = 10 // game timer for 1/6 minute
   let audio = document.getElementById('my-audio')
   let audioIcon = document.getElementById('audio-icon')
   let score = 0
@@ -19,6 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
     'url(assets/images/blue-candy.png)'
   ]
 
+  const iconsName = {
+    on: 'fas fa-volume-mute',
+    off: 'fas fa-volume-up',
+  }
 
   //Background-music
   document.getElementById('toggle-audio').onclick = function() {
@@ -32,20 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
       audio.pause()
     }
     
-    //Stop Timer
-  function stopTimer() {
-    clearInterval(timer);
-  }
-  
-  //Tick Timer
-  function updateTimer() {
-    timeLeft = timeLeft - 1;
-    if (timeLeft >= 0)
-      $('#time').html(timeLeft);
-    else {
-      stopTimer();
-    }
-    }
   }
 
   //Start
@@ -54,9 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
     this.style.display = 'none'
     audio.play()
     audioIcon.className = iconsName.on
-
-    timer = setInterval(updateTimer, 1000); //start timer on click
-    updateTimer(); //reflects 1 second elapsing
 
     window.setInterval(function() {
       checkRowForFour()
@@ -72,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function createBoard() {
     for (let i = 0; i < width*width; i++) {
       const square =  document.createElement('div')
-      square.style.borderRadius = '0%' // changed from 50 to make into squares
+      square.style.borderRadius = '50%'
    
       square.setAttribute('draggable', true)
       square.setAttribute('id', i)

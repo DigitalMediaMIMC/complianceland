@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
    }
    
-   fuction startTimer() {
+   function startTimer() {
     timer = setInterval(updateTimer, 1000);
     updateTimer();
     }

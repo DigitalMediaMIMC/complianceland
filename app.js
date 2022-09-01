@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
    fuction startTimer() {
     timer = setInterval(updateTimer, 1000);
     updateTimer();
+    }
 
   //Start
   document.getElementById('start-button').onclick = function() {

@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     else {
       stopTimer();
     }
+    }
   }
 
   //Start

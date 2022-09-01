@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
   const scoreDisplay = document.getElementById('score')
+  const timeDisplay = document.getElementById('timer')
   const grid = document.querySelector('.grid')
   const width = 8
   const squares = []
-  const timer //game timer
+  
   let timeLeft = 10 // game timer for 1/6 minute
   let audio = document.getElementById('my-audio')
   let audioIcon = document.getElementById('audio-icon')
@@ -44,7 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
     else {
       stopTimer();
     }
-    
   }
 
   //Start

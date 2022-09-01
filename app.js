@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'url(assets/images/blue-candy.png)'
   ]
   
-  fuction endTimer() {
+  function endTimer() {
     clearInterval(timer);
   }
   

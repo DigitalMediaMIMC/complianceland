@@ -1,11 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
   const scoreDisplay = document.getElementById('score')
+  const timeDisplay = document.getElementById('time')
   const grid = document.querySelector('.grid')
   const width = 8
   const squares = []
   let audio = document.getElementById('my-audio')
   let audioIcon = document.getElementById('audio-icon')
   let score = 0
+  let time = 0
 
   const candyColors = [
     'url(assets/images/red-candy.png)',

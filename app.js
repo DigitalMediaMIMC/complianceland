@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let audio = document.getElementById('my-audio')
   let audioIcon = document.getElementById('audio-icon')
   let score = 0
-  let time = 0
+  let timer
+  let time = 10
 
   const candyColors = [
     'url(assets/images/red-candy.png)',
@@ -17,6 +18,23 @@ document.addEventListener('DOMContentLoaded', () => {
     'url(assets/images/green-candy.png)',
     'url(assets/images/blue-candy.png)'
   ]
+  
+  fuction endTimer() {
+    clearInterval(timer);
+  }
+  
+  function updateTimer() {
+    timeLeft = timeLeft - 1;
+    if(timeLeft >= 0)
+      $('#timer').html(timeLeft);
+     else {
+      endTimer();
+      }
+   }
+   
+   fuction startTimer() {
+    timer = setInterval(updateTimer, 1000);
+    updateTimer();
 
   //Start
   document.getElementById('start-button').onclick = function() {

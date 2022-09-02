@@ -22,12 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
   
   function endTimer() {
     clearInterval(timer);
+    alert("Game Over");
   }
   
-   function gameOver() {
-    alert("Game Over");
-   }
-     
   
   function updateTimer() {
     time = time - 1;

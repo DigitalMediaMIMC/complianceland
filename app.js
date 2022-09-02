@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const width = 8
   const squares = []
   let audio = document.getElementById('my-audio')
-  //let audioIcon = document.getElementById('audio-icon')
+  
   let score = 0
   //let timer
   let time = 10
@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
      
   //Start
+  document.getElementById("end-button").style.visibility = "hidden"; 
   document.getElementById('start-button').onclick = function() {
     console.log('start')
     this.style.display = 'none'

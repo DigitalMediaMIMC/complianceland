@@ -68,6 +68,7 @@ audio {
   margin-right: 40px;
   border-radius: 4px;
   border: dashed 6px rgb(138, 66, 138);
+  z-index = 1; /* added */
 }
 
 #toggle-audio {

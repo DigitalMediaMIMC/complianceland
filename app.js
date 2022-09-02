@@ -31,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
       $('#timer').html(time);
      else {
       endTimer();
-      gameOver();
       }
    }
    

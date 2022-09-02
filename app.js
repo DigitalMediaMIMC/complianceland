@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const grid = document.querySelector('.grid')
   const width = 8
   const squares = []
-  let gameOver = document.getElementById('end-button')
   let audio = document.getElementById('my-audio')
   //let audioIcon = document.getElementById('audio-icon')
   let score = 0

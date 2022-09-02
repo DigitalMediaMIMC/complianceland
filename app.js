@@ -24,9 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
   function updateTimer() {
-    timeLeft = timeLeft - 1;
-    if(timeLeft >= 0)
-      $('#timer').html(timeLeft);
+    time = time - 1;
+    if(time >= 0)
+      $('#timer').html(time);
      else {
       endTimer();
       }

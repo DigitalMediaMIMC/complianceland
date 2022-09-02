@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('end-button').onclick = function() {
       console.log('end')
       this.style.display = 'none'  
+      }
    }
      
   

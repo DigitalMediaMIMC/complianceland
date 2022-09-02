@@ -73,7 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
   createBoard()
-  startTimer()
 
   //Drag the candies
   let colorBeingDragged

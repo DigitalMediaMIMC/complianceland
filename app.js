@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('start')
     this.style.display = 'none'
     audio.play()
-    //audioIcon.className = iconsName.on
+    startTimer()
 
     window.setInterval(function() {
       checkRowForFour()

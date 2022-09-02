@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   function endTimer() {
     clearInterval(timer);
-    alert("Game Over");
+    //alert("Game Over");
     document.getElementById("end-button").style.visibility = "visible"; 
   
   }

@@ -113,6 +113,29 @@ audio {
 
 }
 
+#end-button {
+  width: 975px;
+  height: 975px;
+  min-width: 975px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  background-image: url('./assets/candy-crush-background-2.png');
+  border-radius: 4px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+   
+}
+
+#end-button h1 {
+  font-size: 50px;
+  color: rgb(138, 66, 138);
+  z-index: 3;
+
+}
+
+
+
 .links {
   position: absolute;
   bottom: 15px;

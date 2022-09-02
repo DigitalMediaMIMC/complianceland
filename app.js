@@ -23,12 +23,20 @@ document.addEventListener('DOMContentLoaded', () => {
     clearInterval(timer);
   }
   
+   function gameOver() {
+    document.getElementById('end-button').onclick = function() {
+      console.log('end')
+      this.style.display = 'none'  
+   }
+     
+  
   function updateTimer() {
     time = time - 1;
     if(time >= 0)
       $('#timer').html(time);
      else {
       endTimer();
+      gameOver();
       }
    }
    
@@ -37,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateTimer();
     }
 
+     
   //Start
   document.getElementById('start-button').onclick = function() {
     console.log('start')

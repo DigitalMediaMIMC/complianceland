@@ -243,4 +243,4 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
     checkColumnForThree()
-}
+})

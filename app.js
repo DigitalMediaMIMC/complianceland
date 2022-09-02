@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   //let audioIcon = document.getElementById('audio-icon')
   let score = 0
   //let timer
-  let time = 30
+  let time = 10
 
   const candyColors = [
     'url(assets/images/red-candy.png)',

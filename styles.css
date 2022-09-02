@@ -103,16 +103,17 @@ audio {
   border: 0;
   outline: none;
   cursor: pointer;
+  z-index: 3
    
 }
 
 #start-button h1 {
   font-size: 50px;
   color: rgb(138, 66, 138);
-  z-index: 3;
+  z-index: 4;
 
 }
-/*
+
 #end-button {
   width: 975px;
   height: 975px;
@@ -130,11 +131,11 @@ audio {
 #end-button h1 {
   font-size: 50px;
   color: rgb(138, 66, 138);
-  z-index: 3;
+  z-index: 7;
 
 }
-*/
 
+/*
 #splash {
   width: 975px;
   height: 975px;
@@ -155,6 +156,7 @@ audio {
   z-index: 3;
 
 }
+*/
 
 .links {
   position: absolute;

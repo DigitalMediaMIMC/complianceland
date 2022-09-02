@@ -242,4 +242,4 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
     checkColumnForThree()
-})
+}

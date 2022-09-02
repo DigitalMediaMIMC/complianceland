@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const grid = document.querySelector('.grid')
   const width = 8
   const squares = []
+  let gameOver = document.getElementById('end-button')
   let audio = document.getElementById('my-audio')
   //let audioIcon = document.getElementById('audio-icon')
   let score = 0
@@ -24,10 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
    function gameOver() {
-    document.getElementById('end-button').onclick = function() {
-      console.log('end')
-      this.style.display = 'none'  
-      }
+    alert("Game Over");
    }
      
   

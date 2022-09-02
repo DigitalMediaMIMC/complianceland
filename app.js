@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('start')
     this.style.display = 'none'
     audio.play()
+    startTimer()
 
 
     window.setInterval(function() {

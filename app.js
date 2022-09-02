@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function createBoard() {
     for (let i = 0; i < width*width; i++) {
       const square =  document.createElement('div')
-      square.style.borderRadius = '50%'
+      square.style.borderRadius = '0%'
    
       square.setAttribute('draggable', true)
       square.setAttribute('id', i)
@@ -70,7 +70,9 @@ document.addEventListener('DOMContentLoaded', () => {
       squares.push(square)
     }
   }
+  
   createBoard()
+  startTimer()
 
   //Drag the candies
   let colorBeingDragged

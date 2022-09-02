@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const width = 8
   const squares = []
   let audio = document.getElementById('my-audio')
-  let audioIcon = document.getElementById('audio-icon')
+  //let audioIcon = document.getElementById('audio-icon')
   let score = 0
   let timer
   let time = 10
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('start')
     this.style.display = 'none'
     audio.play()
-    audioIcon.className = iconsName.on
+    //audioIcon.className = iconsName.on
 
     window.setInterval(function() {
       checkRowForFour()
